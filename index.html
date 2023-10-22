@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            border: solid 1px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    
+    <p>Required fields are marked by*</p>
+
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            
+            <label>
+                Mx.
+                <br />
+                <input id="Mx." name="visibility" type="radio" value="" checked />
+                <br />
+            </label>
+
+            <label>
+                Mr.
+                <br />
+                <input id="Mr." name="visibility" type="radio" value=""/>
+                <br />
+            </label>
+
+            <label>
+                Ms.
+                <br />
+                <input id="Ms." name="visibility" type="radio" value=""/>
+                <br />
+            </label>
+
+            <label>
+                Mrs.
+                <br />
+                <input id="Mrs." name="visibility" type="radio" value=""/>
+                <br />
+            </label>
+
+            <label>
+                Name *
+                <br />
+                <input id="name" type="text" placeholder="Enter a name" required/>
+                <br />
+            </label>
+
+            <label>
+                Email *
+                <br />
+                <input id="email" type="email" placeholder="Enter an email" required/>
+                <br />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <label>
+                Card Type
+                <select id="card-type" name="card">
+                  <option>-- Select a card --</option>
+                  <option value="visa">VISA</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="american-express">American Express</option>
+                  <option value="discover">Discover</option>
+                </select>
+                <br />
+            </label>
+
+            <label>
+                Credit Card Number *
+                <br />
+                <input id="card-number" type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+                <br />
+            </label>
+
+            <label>
+                Expiration Date *
+                <br />
+                <input id="expiration-date" type="text" placeholder="xx/xx" required/>   
+              </label>
+        </fieldset>
+
+        <button type="submit">Submit Payment</button>
+    </form>
+</body>
+</html>
