@@ -1,0 +1,49 @@
+<form>
+    <p><h1>Payment Form</h1></p>
+    <p><h4>Required fields are marked by * </h4></p>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label>
+            Mx.
+            <br /><input id="Mx." name="visibility" type="radio" value="public" checked /><br /> 
+        </label>
+        <label>
+            Mr.    
+            <br /><input id="Mr." name="visibility" type="radio" value="public" /><br />
+        </label>
+        <label>   
+            Ms.  
+            <br /><input id="Ms." name="visibility" type="radio" value="public" /><br />
+        </label>
+        <label>
+            Mrs.
+            <br /><input id="Mrs." name="visibility" type="radio" value="public" /><br />
+        </label>
+        <label>
+            Name
+        <br /><input id="Name" name="personal" type="text" required/><br />
+        </label>
+        <label>
+            Email
+        <br /><input id="Email" name="personal" type="email" required/>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <label>
+            <select id="Credit Card Number" name="payment">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+            Credit Card Number
+        </label>
+        <br /><input type="tel" placeholder="xxxx xxxx xxxx xxxx" required/><br />
+        <label>
+            Expiration Date
+            <br /><input id="expiration-date" name="payment" type="text" required/>
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit Payment" />
+</form>
