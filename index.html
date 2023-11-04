@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form>
+        <label for="contact info">
+            Contact Information <hr>
+        </label>
+           <label>
+                Mx.
+                <input id="mx." name="visibility" type="radio" value="mx." checked />
+            </label>
+            <br>
+            <label>
+                Mr.
+                <input id="mr." name="visibility" type="radio" value="mr." />
+            </label>
+            <br>
+            <label>
+                Ms.
+                <input id="ms." name="visibility" type="radio" value="ms." />
+            </label>
+            <br>
+            <label>
+                Mrs.
+                <input id="mrs." name="visibility" type="radio" value="mrs" />
+            </label>
+            <br>
+            <label for="name">
+                Name
+            </label> 
+            <br>   
+        <input type="text" id="name" required />
+        <br>
+        <label for="email">
+            Email
+        </label>
+        <br>
+        <input type="email" id="email" required/>
+        <hr>
+        <label for="payment info">
+            Payment Information
+        </label>
+        <br>
+        <label>
+            <select id="post-category" name="category">
+                <option value="visa">Visa</option> 
+                <option value="mastercard">Mastercard</option>
+                <option value="american-express">American Express</option>
+                <option value="discover">Discover</option>
+            </select>
+        </label>
+        Credit Card Number
+        <br>
+        <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required/>
+        <br>
+        <label>
+            Expiration Date
+        </label>
+        <br>
+        <input id="expiration-date" type="text"  checked />
+        <hr>
+        <input type="submit" value="Submit Payment" />
+    </form>
+    
+</body>
+</html>
