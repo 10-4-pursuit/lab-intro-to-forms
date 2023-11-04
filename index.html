@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        fieldset {
-            border: solid 1px black;
-            border-radius: solid 1px black;
-        }
-    </style>
 </head>
 <body>
 
@@ -18,38 +12,49 @@
   <p>Required fields are marked by *</p>
 
   <form>
-    <div class="box">
-      <div class="box-title">Contact Information</div>
-      <div class="form-group">
-        <label for="salutation">Salutation *</label>
-        <label>
-          Mx.
-          <input id="mx" name="salutation" type="radio" value="Mx." checked />
-        </label>
-        <label>
-          Mr.
-          <input id="mr" name="salutation" type="radio" value="Mr." />
-        </label>
-        <label>
-          Ms.
-          <input id="ms" name="salutation" type="radio" value="Ms." />
-        </label>
-        <label>
-          Mrs.
-          <input id="mrs" name="salutation" type="radio" value="Mrs." />
-        </label>
+    <fieldset>
+    <!-- <div class="box"> -->
+      <legend> Contact Information </legend>
+
+      <div> <label>
+        Mx. <br />
+        <input id="mx" name="salutation" type="radio" value="Mx." checked />
+      </label>
+      <div>
+
+      <div> <label>
+        Mr. <br />
+        <input id="mr" name="salutation" type="radio" value="Mr." />
+      </label>
+      </div>
+
+      </div> <label>
+        Ms. <br />
+        <input id="ms" name="salutation" type="radio" value="Ms." />
+      </label>
+      </div>
+      
+      <div> <label>
+        Mrs. <br />
+        <input id="mrs" name="salutation" type="radio" value="Mrs." />
+      </label>
+
       </div>
       <div class="form-group">
         <label for="contact-name">Name *</label>
-        <input id="contact-name" name="name" type="text" required />
+        <input id="contact-name" name="name" type="text" placeholder="Full Name Here" required />
       </div>
       <div class="form-group">
         <label for="contact-email">Email *</label>
-        <input id="contact-email" name="email" type="email" required />
+        <input id="contact-email" name="email" type="email" placeholder="Enter email here" required />
       </div>
     </div>
-    <div class="box">
-      <div class="box-title">Payment Information</div>
+    <!-- <div class="box"> -->
+      <form>
+      <legend>
+        Payment Information
+      </legend>
+      <!-- <div class="box-title">Payment Information</div> -->
       <div class="form-group">
         <label for="credit-card">Select a category *</label>
         <select id="credit-card" name="credit" required>
@@ -69,7 +74,9 @@
         <input type="text" id="expiration_date" name="expiration_date" placeholder="MM/YY" required />
       </div>
     </div>
+    </form>
     <input type="submit" value="Submit Payment" />
   </form>
+</fieldset>
 </body>
 </html>
