@@ -22,21 +22,21 @@ Update the `index.html` file to display a form for entering payment information.
 
 In addition to looking similar to the image above, make sure you meet the following requirements:
 
-- [ ] Your submit button should be an `input` element, with the text `Submit Payment`.
+- [ check] Your submit button should be an `input` element, with the text `Submit Payment`.
 
-- [ ] You should have all four radio buttons listed above.
+- [ check] You should have all four radio buttons listed above.
 
-- [ ] The first radio button should be `checked` by default.
+- [check ] The first radio button should be `checked` by default.
 
-- [ ] The other radio buttons should be deselected when a radio button is clicked.
+- [check ] The other radio buttons should be deselected when a radio button is clicked.
 
-- [ ] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
+- [check ] The Name field should be a text input, have a corresponding label tag, have an id of `name`, and be required.
 
-- [ ] The Email field should be an email input, have a corresponding label tag, have an id of `email`, and be required.
+- [ check] The Email field should be an email input, have a corresponding label tag, have an id of `email`, and be required.
 
-- [ ] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
+- [ check] The Dropdown should include four options: "Visa", "Mastercard", "American Express", and "Discover".
 
-- [ ] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
+- [check ] The Dropdown option's values should be "visa", "mastercard", "american-express", and "discover".
 
 - [ ] The Credit Card field should be a `tel` type, have a placeholder of `xxxx xxxx xxxx xxxx`, and be required.
 
