@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1> <br>
+    <p>Required Fields Are Marked By (*)</p>
+    <form> 
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="Radio"> MX.</label> <br>
+            <input type="radio" name="Radio" id="Radio" value="MX"> <br>
+
+            <label for="Radio">Mr.</label> <br>
+            <input type="radio" name="Radio" id="Radio" value="Mr."> <br> 
+
+            <label for="Radio">Ms.</label> <br>
+            <input type="radio" name="Radio" id="Radio" value="Ms."> <br>
+
+            <label for="Radio">Mrs.</label> <br>
+            <input type="radio" name="Radio" id="Radio" value="Mrs."> <br>
+
+            <label for="First Name">First Name</label> <br>
+            <input type="text" name="First Name" id="First Name"> <br>
+
+            <label for="Last Name">Last Name</label> <br>
+            <input type="text" name="Last Name" id="Last Name"> <br>
+
+            <label for="Email">Email</label> <br>
+            <input type="email" name="Email" id="Email"> <br>
+          
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+            
+            <label for="Dropdown"></label>
+            <select name="Dropdown" id="Dropdown">
+                <option value="Visa">Visa</option>
+                <option value="MasterCard">MasterCard</option>
+                <option value="American Express">American Express</option>
+            </select>
+
+            <label for="Card Number">Card Number</label> <br>
+            <input type="text" name="Card Number" id="Card Number" placeholder="XXXX XXXX XXXX XXXX"> <br>
+
+            <label for="Expiration Date">Expiration Date</label> <br>
+            <input type="text" name="Expiration Date" id="Expiration Date"> <br>
+        
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
