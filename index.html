@@ -2,8 +2,45 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="theme-color"  content="#ff337b">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Payment Form</title>
+	<style>
+        /* body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        } */
+
+        /* fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }  */
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        } 
+        input[type="radio"] {
+            margin-left: none;
+        } 
+		#name, #email, #expirationDate{
+			width: 50%;
+		}
+		#creditCardNumber {
+            width: 50%; 
+		}
+		#typeOfPayment {
+            width: 50%;
+		}
+		
+		
+		</style>
 </head>
 <body>
 	<h1>Payment Form</h1>
@@ -16,13 +53,13 @@
 			<input type="radio" name="namePreference" id="mx." checked>
 			
 			<label for="mr.">Mr.</label>
-			<input type="radio" id="mr.">
+			<input type="radio" id="mr." required>
 			
 			<label for="ms.">Ms.</label>
-			<input type="radio" name="namePreference" id="ms.">
+			<input type="radio" name="namePreference" id="ms." required>
 
-			<label for="mrs">Mrs.</label>
-			<input type="radio" name="namePreference" id="mrs.">
+			<label for="mrs" required>Mrs.</label>
+			<input type="radio" name="namePreference" id="mrs." required>
 
 		<label for="name">Name:</label>
 		<input type="text" id="name" name="name" required>
@@ -39,12 +76,28 @@
 			<option value="americanExpress">American Express</option>
 			<option value="discovery">Discover</option>
 		</select>
-		<label for="creditCardNumber" ></label>
+		<label for="creditCardNumber" >Credit Card Number</label>
 		<input type="tel" placeholder="xxxx xxxx xxxx xxxx">
 		<label for="experationDate">Expiration Date</label>
 		<input type="tel" id="expirationDate">
-		
+
 	</fieldset>
+	<button type="click">Submit Payment</button>
 	</form>
+	<script>
+	   document.addEventListener('DOMContentLoaded', function() {
+        var radioButtons = document.querySelectorAll('input[name="namePreference"]');
+        
+        radioButtons.forEach(function(radio) {
+            radio.addEventListener('click', function(event) {
+                radioButtons.forEach(function(otherRadio) {
+                    if (otherRadio !== event.target) {
+                        otherRadio.checked = false;
+                    }
+                });
+            });
+        });
+    });
+	</script>
 </body>
 </html>
